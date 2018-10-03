@@ -1,0 +1,42 @@
+{
+  "name": "SpeedyMyLoans",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Nazarchuk <s.nazarchuck@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --env development",
+    "build": "webpack --env production",
+    "serv": "static build"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "csso-webpack-plugin": "^1.0.0-beta.10",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "font-loader": "^0.1.2",
+    "group-css-media-queries-loader": "^1.0.4",
+    "html-webpack-plugin": "^2.29.0",
+    "image-webpack-loader": "^4.3.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "node-less": "^1.0.0",
+    "node-sass": "^4.9.2",
+    "optimize-css-assets-webpack-plugin": "^3.0.0",
+    "pug": "^2.0.0-rc.2",
+    "pug-loader": "^2.3.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.18.2",
+    "url": "^0.11.0",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.6.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0",
+    "resolve-url-loader": "^2.3.0"
+  }
+}

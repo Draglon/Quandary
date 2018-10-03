@@ -1,0 +1,75 @@
+.header {
+  background-color: $header-bg;
+  border-bottom: $border-solid-base;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  z-index: 999;
+
+  .container {
+    height: 100%;
+  }
+
+  &_scroll {
+    position: fixed;
+  }
+
+  .navbar {
+    position: relative;
+    height: 100%;
+    &-collapse {
+      height: 100%;
+    }
+  }
+  .navbar-toggler {
+    border: 1px solid $grey;
+    width: 40px;
+    height: 30px;
+  }
+  .navbar-toggler-icon {
+    background-color: $grey;
+    position: relative;
+    height: 2px;
+    width: 100%;
+    &:before, &:after {
+      content: '';
+      background-color: $grey;
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+    }
+    &:before {
+      top: -6px;
+    }
+    &:after {
+      bottom: -6px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .header {
+    .navbar {
+      position: relative;
+      height: 100%;
+      &-collapse {
+        background-color: rgba(255,255,255, .75);
+        position: fixed;
+        top: $header-height;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .main-menu {
+          padding-top: 100px;
+          > li {
+            margin-bottom: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

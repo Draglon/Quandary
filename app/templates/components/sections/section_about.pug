@@ -1,0 +1,15 @@
+- var title = "Расскажите о себе"
+- var text = "Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас"
+- var textareaPlacehlder = "Понравилась тем, что..."
+- var button = "Готово"
+
+section#about.section.section_about
+    .container.container-small
+
+        h2 #{title}
+        p.text-center #{text}
+        
+        .form-group
+            textarea(placeholder=textareaPlacehlder)
+
+        button.btn.btn-primary(type=submit) #{button}

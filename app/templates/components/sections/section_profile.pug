@@ -1,0 +1,27 @@
+- var title = "Личная информация"
+- var selectValue = 0
+
+- var fields = [
+-   {type: "text", placeholder: "ФИО"},
+-   {type: "select", placeholder: "Год рождения"},
+-   {type: "text", placeholder: "Место проживания"},
+-   {type: "text", placeholder: "Skype"},
+-   {type: "email", placeholder: "E-mail"},
+-]
+
+section#profile.section.section_profile
+    .container.container-small
+        h2 #{title}
+
+        each field in fields
+            .row.justify-content-center
+                if field.type=="text" || field.type=="email"
+                    .col
+                        input(type=field.type placeholder=field.placeholder)
+                if field.type=="select"
+                    .col-10.col-sm-8
+                        .custom-select
+                            select
+                                option(disabled selected hidden) #{field.placeholder}
+                                while selectValue < 50
+                                    option= 2010 - selectValue++

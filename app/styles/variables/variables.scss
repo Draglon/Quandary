@@ -1,0 +1,102 @@
+// ==================== COLORS =====================
+// White
+$white: #fff;
+
+// Black
+$black: #000;
+
+// Grey
+$grey: #c8c8c8;
+
+// Blue
+$blue: #637ab4;
+$blue-lightest: #e9efff;
+
+// ==================== TEXT COLORS ====================
+$text-color-base: #1c1c1c;
+
+// Link style
+$link-color: $text-color-base;
+$link-color-hover: $blue;
+$link-color-active: $blue;
+
+// ==================== BACKGROUND ======================
+$bg-base: $white;
+$bg-header: $white;
+$bg-footer: $grey;
+
+// ==================== FONT FAMILY ===================
+$font-serif: serif;
+$font-sans-serif: sans-serif;
+$font-family-base: 'Roboto', sans-serif;
+
+// ==================== FONT SIZE =======================
+// base
+$font-size-base: 10px;
+// font size
+$font-size14: 1.4em;
+$font-size16: 1.6em;
+$font-size20: 2em;
+$font-size24: 2.4em;
+$font-size30: 3em;
+$font-size70: 7em;
+
+// tags
+$font-size-h1: $font-size70; // h1
+$font-size-h2: $font-size30; // h2
+$font-size-h3: $font-size16; // h3
+$font-size-p: $font-size16; // p
+$font-size-btn: $font-size16; // button
+$font-size-input: $font-size24; // select, input, textarea
+$font-size-radio: $font-size16; // radio, checkbox
+
+$font-weight-base: 300;
+$line-height-base: 1.4;
+$letter-spacing-base: 0;
+
+// ==================== BORDERS =======================
+$border-color-base: $grey;
+$border-width-base: 1px;
+
+$border-style-solid: solid;
+$border-style-dotted: dotted;
+$border-style-dashed: dashed;
+
+$border-radius-base: 8px;
+$border-radius-half: 50%;
+
+$border-solid: $border-width-base $border-style-solid;
+$border-dotted: $border-width-base $border-style-dotted;
+$border-dashed: $border-width-base $border-style-dashed;
+
+$border-solid-base: $border-solid $border-color-base;
+
+// ==================== FORMS: Buttons =======================
+$btn-color: $white;
+$btn-font-size: $font-size-btn;
+$btn-font-size-mobile: $font-size-btn;
+$btn-font-family: $font-family-base;
+$btn-weight: 300;
+$btn-padding: 1em 2em;
+$btn-radius: $border-radius-base;
+// Primary Button
+$primary-btn-color: $white;
+$primary-btn-color-hover: $white;
+$primary-btn-bg-color: $blue;
+$primary-btn-bg-hover: $blue;
+$primary-btn-bg-active: $blue;
+$primary-btn-border: none;
+// ==================== FORMS: Inputs =======================
+$input-border: $border-solid-base;
+$input-radius: 4px;
+$input-font-size: $font-size-input;
+$input-font-family: $font-family-base;
+$input-weight: 400;
+$input-padding: 0 15px;
+$input-shadow: none;
+$input-height: 60px;
+$placeholder-color: $grey;
+// ==================== HEADER =======================
+$header-bg: $bg-header;
+$header-height: 8em;
+$header-height-mobile: 8em;

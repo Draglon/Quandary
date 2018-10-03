@@ -1,0 +1,17 @@
+- var mainMenu = [
+-   {href: "#profile", text: "Личная информация"},
+-   {href: "#experience", text: "Опыт"},
+-   {href: "#about", text: "О себе"}
+-]
+
+header#header.header
+    .container
+        nav.navbar.navbar-expand-lg
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+
+            #navbarSupportedContent.collapse.navbar-collapse.justify-content-center.align-items-center
+                ul.navbar-nav.main-menu
+                    each menuItem in mainMenu
+                        li.nav-item(class=menuItem.active)
+                            a.nav-link(href=menuItem.href) #{menuItem.text}

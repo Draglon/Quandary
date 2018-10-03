@@ -1,0 +1,185 @@
+input:focus, button:focus {outline: none !important;}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+textarea,
+select {
+  border: $input-border;
+  border-radius: $input-radius;
+  box-shadow: $input-shadow;
+  display: block;
+  font-size: $input-font-size;
+  font-family: $input-font-family;
+  font-weight: $input-weight;
+  padding: $input-padding;
+  height: $input-height;
+  width: 100%;
+}
+::-webkit-input-placeholder {color: $placeholder-color;text-align: center;opacity: 1;}
+:-moz-placeholder {color: $placeholder-color;text-align: center;opacity: 1;}
+::-moz-placeholder {color: $placeholder-color;text-align: center;opacity: 1;}
+:-ms-input-placeholder {color: $placeholder-color;text-align: center;opacity: 1;}
+:focus::-webkit-input-placeholder {opacity: 0;}
+:focus:-moz-placeholder {opacity: 0;}
+:focus::-moz-placeholder {opacity: 0;}
+:focus:-ms-input-placeholder {opacity: 0;}
+textarea {
+  padding: 15px;
+  height: 180px;
+  resize: none;
+  &::-webkit-input-placeholder {color: $placeholder-color;text-align: left;}
+  &:-moz-placeholder {color: $placeholder-color;text-align: left;}
+  &::-moz-placeholder {color: $placeholder-color;text-align: left;}
+  &:-ms-input-placeholder {color: $placeholder-color;text-align: left;}
+}
+select {
+  //background: @white url("../../images/select.jpg") no-repeat 100% 0;
+  background-size: contain;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select::-ms-expand {display: none;}
+.custom-select {
+  position: relative;
+  z-index: 1;
+  select {
+    height: 0;
+    opacity: 0;
+    font-size: 0;
+    border: 0;
+  }
+  .select-selected {
+    border: $input-border;
+    border-radius: $input-radius;
+    font-size: $font-size24;
+    font-weight: 400;
+    height: 60px;
+    position: relative;
+    line-height: 60px;
+    text-align: center;
+    &:before {
+      content: '';
+      border-bottom: 2px solid $blue;
+      border-left: 2px solid $blue;
+      position: absolute;
+      top: calc(50% - 6px);
+      right: 18px;
+      width: 12px;
+      height: 12px;
+      @include transform-rotate(-45deg);
+    }
+    &.select-arrow-active {
+      &:before {
+        @include transform-rotate(135deg);
+      }
+    }
+  }
+  .select-items {
+    background-color: $white;
+    border: $input-border;
+    border-radius: 4px;
+    color: $blue;
+    font-size: $font-size20;
+    font-weight: 400;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 300px;
+    overflow: auto;
+    text-align: center;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 14px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: $white; 
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background-color: $grey;
+      border-radius: 5px;
+      border: 5px solid $white;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: $grey;
+    }
+
+    div {
+      cursor: pointer;
+      line-height: 40px;
+      &:first-child {display:none;}
+      &:hover {
+        background-color: $blue-lightest;
+      }
+    }
+  }
+  .select-hide {
+    display: none;
+  }
+}
+
+// ========================= Checkbox =========================
+input[type="checkbox"] {
+  position: absolute;
+  height: 0;
+  font-size: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="checkbox"] + label {
+  display: inline-block;
+  font-size: $font-size-radio;
+  position: relative;
+  padding-left: 2em;
+  &:before, &:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:before {
+    border: 1px solid $blue;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+  }
+  &:after {
+    display: none;
+  }
+  &:hover:before {
+    background-color: $blue-lightest;
+  }
+}
+input[type="checkbox"]:checked + label {
+  &:before {
+    background-color: $blue;
+  }
+  &:after {
+    border-bottom: 2px solid $white;
+    border-left: 2px solid $white;
+    display: block;
+    top: 6px;
+    left: 4px;
+    width: 12px;
+    height: 6px;
+    @include transform-rotate(-45deg);
+  }
+}
+
+// ========================= Buttons =========================
+.btn {
+  @include btn();
+}
+.btn-primary {
+  @include btn-primary();
+}

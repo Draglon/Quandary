@@ -1,0 +1,13 @@
+extends ../base
+block title
+    | О себе
+
+block header
+    include ../components/header/header
+
+block content
+    form(method="post" action="index.html") 
+        include ../components/sections/section_main
+        include ../components/sections/section_profile
+        include ../components/sections/section_experience
+        include ../components/sections/section_about

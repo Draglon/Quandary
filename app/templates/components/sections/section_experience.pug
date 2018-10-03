@@ -1,0 +1,26 @@
+- var title = "Расскажите о своем опыте"
+- var fieldList = [
+-   {type: 'checkbox', label: 'БЭМ/OOCSS'},
+-   {type: 'checkbox', label: 'Stylus/LESS/SASS'},
+-   {type: 'checkbox', label: 'Работаю с SVG'},
+
+-   {type: 'checkbox', label: 'Верстаю семантично'},
+-   {type: 'checkbox', label: 'ES2015/ES2016'},
+-   {type: 'checkbox', label: 'Gulp/GRUNT'},
+
+-   {type: 'checkbox', label: 'Webpack'},
+-   {type: 'checkbox', label: 'jQuery'},
+-   {type: 'checkbox', label: 'Ипользую Git'}
+-]
+
+section#experience.section.section_experience
+    .container.container-middle
+        h2 #{title}
+
+        .row.justify-content-center.justify-content-sm-start
+            each field, index in fieldList
+                .col-8.col-sm-5.col-md-4
+                    .form-group
+                        input(type=field.type name="experience" id="experience_" + index)
+                        label(for="experience_" + index) #{field.label}
+                    

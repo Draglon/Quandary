@@ -1,0 +1,47 @@
+@mixin btn(
+  $f-size: $btn-font-size,
+  $f-weight: $btn-weight,
+  $padding: $btn-padding,
+  $border-radius: $btn-radius
+) {
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-size: $f-size;
+    font-weight: $f-weight;
+    padding: $padding;
+    display: inline-block;
+}
+
+@mixin btn-primary (
+  $color: $primary-btn-color,
+  $background-color: $primary-btn-bg-color,
+  $border: $primary-btn-border
+) {
+  background-color: $background-color;
+  border: $border;
+  color: $color;
+  text-transform: uppercase;
+  @include main-transition(background-color, border-color);
+
+  &:hover {
+    color: $color;
+    background-color: $primary-btn-bg-hover;
+    border-color: $primary-btn-color-hover;
+    opacity: .75;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $primary-btn-bg-active;
+    border-color: $primary-btn-bg-active;
+  }
+  &[disabled] {
+    opacity: .5;
+    &:hover, &:active, &:focus {
+      background-color: $background-color;
+      border: $border;
+      color: $color;
+      cursor: default;
+    }
+  }
+}

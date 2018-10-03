@@ -1,0 +1,22 @@
+.section_profile {
+    background-image: url('../images/icons/icon_1.png');
+    background-size: 47px;
+    background-repeat: no-repeat;
+    background-position: center 32px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+
+    h2 {
+        margin-bottom: 45px;
+    }
+    .row {
+        margin-bottom: 25px;
+        &:last-child {margin-bottom: 0;}
+    }
+    input {
+        text-align: center;
+    }
+    .select-selected {
+        color: $grey;
+    }
+}
