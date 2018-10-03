@@ -32,19 +32,24 @@ const common = merge([
                 template: PATHS.source + '/templates/pages/main.pug'
             }),
             new HtmlWebpackPlugin({
-                filename: 'profile.html',
+                filename: 'services.html',
                 chunks: ['index', 'common'],
-                template: PATHS.source + '/templates/pages/profile.pug'
+                template: PATHS.source + '/templates/pages/services.pug'
             }),
             new HtmlWebpackPlugin({
-                filename: 'experience.html',
+                filename: 'case_studies.html',
                 chunks: ['index', 'common'],
-                template: PATHS.source + '/templates/pages/experience.pug'
+                template: PATHS.source + '/templates/pages/case_studies.pug'
             }),
             new HtmlWebpackPlugin({
-                filename: 'about.html',
+                filename: 'knowledge.html',
                 chunks: ['index', 'common'],
-                template: PATHS.source + '/templates/pages/about.pug'
+                template: PATHS.source + '/templates/pages/knowledge.pug'
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'contact.html',
+                chunks: ['index', 'common'],
+                template: PATHS.source + '/templates/pages/contact.pug'
             }),
             
             new webpack.optimize.CommonsChunkPlugin({

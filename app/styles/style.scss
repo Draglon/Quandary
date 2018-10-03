@@ -1,5 +1,5 @@
 // Libs
-@import "libs/libs";
+// @import "libs/libs";
 // Variables
 @import 'variables/variables';
 // Mixins
@@ -8,14 +8,18 @@
 @import 'mixins/transition';
 // Basic
 @import 'basic/main';
-@import 'basic/resize';
+// @import 'basic/resize';
 // Forms
 @import 'forms/forms';
 // Components
-@import 'components/header/header';
-@import 'components/header/main-menu';
+@import 'components/aside/aside';
+@import 'components/aside/logo';
+@import 'components/aside/navbar';
+@import 'components/aside/info';
+// @import 'components/header/header';
+// @import 'components/header/main-menu';
 // Sections
-@import 'components/sections/section_main';
-@import 'components/sections/section_profile';
-@import 'components/sections/section_experience';
-@import 'components/sections/section_about';
+// @import 'components/sections/section_main';
+// @import 'components/sections/section_profile';
+// @import 'components/sections/section_experience';
+// @import 'components/sections/section_about';

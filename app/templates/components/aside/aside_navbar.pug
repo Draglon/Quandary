@@ -1,0 +1,16 @@
+- var mainMenu = [
+-   {href: "services.html", text: "Services", active: true},
+-   {href: "case_studies.html", text: "Case studies"},
+-   {href: "knowledge.html", text: "Knowledge"},
+-   {href: "contact.html", text: "Contact"}
+-]
+
+nav.navbar
+    ul.navbar__menu
+        each menuItem in mainMenu
+            if menuItem.active
+                li.navbar__item.active
+                    a.navbar__link(href=menuItem.href) #{menuItem.text}
+            else
+                li.navbar__item
+                    a.navbar__link(href=menuItem.href) #{menuItem.text}

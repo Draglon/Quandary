@@ -8,7 +8,6 @@ module.exports = function(paths) {
           use: [
             'style-loader',
             'css-loader',
-            'autoprefixer-loader',
             'group-css-media-queries-loader'
           ]
         }

@@ -1,0 +1,22 @@
+.navbar {
+    margin-top: 6em;
+    padding-left: 3em;
+    margin-bottom: 10.5em;
+
+    &__menu {
+
+    }
+
+    &__item {
+
+        &.active a {
+            color: #83CEC6;
+        }
+    }
+
+    &__link {
+        color: $white;
+        font-size: 3.6em;
+        font-weight: bold;
+    }
+}

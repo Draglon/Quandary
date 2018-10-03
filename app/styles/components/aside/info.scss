@@ -1,0 +1,35 @@
+.info {
+    padding-left: 3em;
+
+    &__item {
+        margin-bottom: 1.8em;
+
+        .copy {
+            color: $white;
+            font-size: 1.2em;
+        }
+
+        .address {
+            color: $white;
+            font-size: 1.2em;
+        }
+
+        .phone {
+            color: $white;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .privacy {
+
+            &__item {
+                
+            }
+
+            &__link {
+                color: $white;
+                font-size: 1.2em;
+            }
+        }
+    }
+}

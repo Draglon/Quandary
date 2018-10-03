@@ -1,5 +1,4 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CssoWebpackPlugin = require('csso-webpack-plugin').default;
 
 module.exports = function(paths) {
@@ -12,7 +11,7 @@ module.exports = function(paths) {
           use: ExtractTextPlugin.extract({
             publicPath: '../',
             fallback: 'style-loader',
-            use: ['css-loader', 'autoprefixer-loader', 'group-css-media-queries-loader','sass-loader']
+            use: ['css-loader', 'group-css-media-queries-loader','sass-loader']
           })
         },
         {

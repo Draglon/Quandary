@@ -1,0 +1,24 @@
+- var copy = '&copy; 2018<br>Quandary Consulting Group'
+- var address = '1550 Larimer St #676<br>Denver, CO 80202'
+- var phone = 'Tel: (720) 739-1406'
+- var phoneNumber = 'tel:7207391406'
+- var list = [
+-    {href: '#', text: 'Terms & Conditions'},
+-    {href: '#', text: 'Privacy Policy'}
+-]
+
+.info
+    .info__item
+        .copy !{copy}
+
+    .info__item
+        .address !{address}
+
+    .info__item
+        a.phone(href=phoneNumber) !{phone}
+
+    .info__item
+        .privacy
+        each item in list
+            .privacy__item
+                a.privacy__link(href=item.href) !{item.text}
