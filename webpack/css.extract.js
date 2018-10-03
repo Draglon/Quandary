@@ -12,7 +12,7 @@ module.exports = function(paths) {
           use: ExtractTextPlugin.extract({
             publicPath: '../',
             fallback: 'style-loader',
-            use: ['css-loader','group-css-media-queries-loader','sass-loader']
+            use: ['css-loader', 'autoprefixer-loader', 'group-css-media-queries-loader','sass-loader']
           })
         },
         {
