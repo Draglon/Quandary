@@ -1,0 +1,15 @@
+- var title = 'Our team'
+- var team = [
+-   {src: require('../../../images/team/person_1.png'), name: 'John Malkovich', position: 'CEO'},
+-   {src: require('../../../images/team/person_2.png'), name: 'Hugh Jackman', position: 'COO'}
+-]
+
+section.section.out-team
+    h2.section__title #{title}
+    ul.out-team__list
+        each item in team
+            li.out-team__item
+                figure.out-team__figure
+                    img.out-team__img(src=item.src)
+                .out-team__name #{item.name}
+                .out-team__position #{item.position}

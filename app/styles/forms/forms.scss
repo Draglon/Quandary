@@ -6,9 +6,12 @@ input[type=email],
 input[type=tel],
 textarea,
 select {
-  border: $input-border;
+  background-color: $input-bg;
+  border: none;
+  border-bottom: $input-border;
   border-radius: $input-radius;
   box-shadow: $input-shadow;
+  color: $input-color;
   display: block;
   font-size: $input-font-size;
   font-family: $input-font-family;
@@ -17,10 +20,10 @@ select {
   height: $input-height;
   width: 100%;
 }
-::-webkit-input-placeholder {color: $placeholder-color;text-align: center;opacity: 1;}
-:-moz-placeholder {color: $placeholder-color;text-align: center;opacity: 1;}
-::-moz-placeholder {color: $placeholder-color;text-align: center;opacity: 1;}
-:-ms-input-placeholder {color: $placeholder-color;text-align: center;opacity: 1;}
+::-webkit-input-placeholder {color: $placeholder-color;font-weight: bold;font-style: italic;opacity: 1;}
+:-moz-placeholder {color: $placeholder-color;font-weight: bold;font-style: italic;opacity: 1;}
+::-moz-placeholder {color: $placeholder-color;font-weight: bold;font-style: italic;opacity: 1;}
+:-ms-input-placeholder {color: $placeholder-color;font-weight: bold;font-style: italic;opacity: 1;}
 :focus::-webkit-input-placeholder {opacity: 0;}
 :focus:-moz-placeholder {opacity: 0;}
 :focus::-moz-placeholder {opacity: 0;}

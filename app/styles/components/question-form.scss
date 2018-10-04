@@ -1,0 +1,33 @@
+.question-form {
+    background-color: $bg-active;
+    padding: 3em 3em 1.8em;
+
+    &__title {
+        color: $white;
+        font-family: $font-family-PTSerif;
+        font-size: $font-size48; 
+        font-weight: bold;
+        text-align: center;
+    }
+
+    button {
+        font-size: $font-size30;
+    }
+}
+
+.form {
+    padding-top: 3.6em;
+    margin: 0 -1.5em;
+    text-align: center;
+
+    &__field {
+        float: left;
+        padding: 0 1.5em;
+        margin-bottom: 1.8em;
+        width: 33.33%;
+
+        &:nth-child(4) {
+            width: 100%;
+        }
+    }
+}

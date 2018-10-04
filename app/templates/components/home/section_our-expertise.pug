@@ -9,3 +9,13 @@
 -    {icon: '', text: 'Process Improvement Consulting'}
 -]
 
+
+h2.page__title #{sectionTitle}
+
+section.section.our-expertise
+    h2.section__title #{title}
+    ul.our-expertise__list
+        each item in list
+            li.our-expertise__item
+                i(class=item.icon)
+                span #{item.text}

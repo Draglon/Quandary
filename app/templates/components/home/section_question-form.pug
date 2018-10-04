@@ -1,0 +1,18 @@
+- var title = 'What problem can we help you solve?'
+- var button = 'Get in touch'
+
+- var fields = [
+-    {type: 'text', placeholder: 'What’s your name?'},
+-    {type: 'email', placeholder: 'What’s your email address?'},
+-    {type: 'tel', placeholder: 'What’s your phone number?'},
+-    {type: 'text', placeholder: 'What’s the issue that you need help with?'}
+-]
+
+section.section.question-form
+    h3.question-form__title #{title}
+    form.form
+        each field in fields
+            .form__field
+                input(type=field.type placeholder=field.placeholder autocomplete='off')
+
+        button.btn.btn-primary.form_submit #{button}

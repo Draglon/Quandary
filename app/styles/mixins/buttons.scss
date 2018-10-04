@@ -1,13 +1,17 @@
 @mixin btn(
+  $f-family: $btn-font-family,
   $f-size: $btn-font-size,
   $f-weight: $btn-weight,
+  $f-style: $btn-font-style,
   $padding: $btn-padding,
   $border-radius: $btn-radius
 ) {
     border-radius: $border-radius;
     cursor: pointer;
+    font-family: $f-family;
     font-size: $f-size;
     font-weight: $f-weight;
+    font-style: $f-style;
     padding: $padding;
     display: inline-block;
 }
@@ -15,12 +19,13 @@
 @mixin btn-primary (
   $color: $primary-btn-color,
   $background-color: $primary-btn-bg-color,
-  $border: $primary-btn-border
+  $border: $primary-btn-border,
+  $box-shadow: $primary-btn-shadow
 ) {
   background-color: $background-color;
   border: $border;
+  box-shadow: $box-shadow;
   color: $color;
-  text-transform: uppercase;
   @include main-transition(background-color, border-color);
 
   &:hover {

@@ -1,0 +1,17 @@
+- var title = 'Our Partners'
+
+- var brands = [
+-    {src: require('../../../images/brands/brans_microfoft.png')},
+-    {src: require('../../../images/brands/brand_ibm.png')},
+-    {src: require('../../../images/brands/brand_oracle.png')},
+-    {src: require('../../../images/brands/brand_salesforce.png')},
+-    {src: require('../../../images/brands/brand_servicenow.png')},
+-    {src: require('../../../images/brands/brand_magento.png')},
+-]
+
+section.section.our-partners
+    h2.section__title #{title}
+    ul.our-partners__list
+        each brand in brands
+            li.our-partners__item
+                img(src=brand.src)

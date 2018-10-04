@@ -13,6 +13,7 @@
 @import 'forms/forms';
 // Components
 @import 'components/page';
+@import 'components/question-form';
 // aside - panel
 @import 'components/aside/aside';
 @import 'components/aside/logo';
@@ -20,3 +21,8 @@
 @import 'components/aside/footer';
 // home - page
 @import 'components/home/header';
+@import 'components/home/our-expertise';
+@import 'components/home/our-partners';
+@import 'components/home/our-team';
+@import 'components/home/resent-cases';
+@import 'components/home/testimonials';
