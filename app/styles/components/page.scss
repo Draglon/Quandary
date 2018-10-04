@@ -1,0 +1,8 @@
+.page {
+    flex: 0 0 calc(100% - 300px);
+    min-height: 100vh;
+
+    &__content {
+        padding: 0 5.5em 0 4em; 
+    }
+}

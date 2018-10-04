@@ -7,18 +7,18 @@
 -    {href: '#', text: 'Privacy Policy'}
 -]
 
-.info
-    .info__item
+.footer
+    .footer__item
         .copy !{copy}
 
-    .info__item
+    .footer__item
         .address !{address}
 
-    .info__item
+    .footer__item
         a.phone(href=phoneNumber) !{phone}
 
-    .info__item
+    .footer__item
         .privacy
-        each item in list
-            .privacy__item
-                a.privacy__link(href=item.href) !{item.text}
+            each item in list
+                .privacy__item
+                    a.privacy__link(href=item.href) !{item.text}

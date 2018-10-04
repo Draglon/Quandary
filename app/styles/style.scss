@@ -12,14 +12,11 @@
 // Forms
 @import 'forms/forms';
 // Components
+@import 'components/page';
+// aside - panel
 @import 'components/aside/aside';
 @import 'components/aside/logo';
 @import 'components/aside/navbar';
-@import 'components/aside/info';
-// @import 'components/header/header';
-// @import 'components/header/main-menu';
-// Sections
-// @import 'components/sections/section_main';
-// @import 'components/sections/section_profile';
-// @import 'components/sections/section_experience';
-// @import 'components/sections/section_about';
+@import 'components/aside/footer';
+// home - page
+@import 'components/home/header';

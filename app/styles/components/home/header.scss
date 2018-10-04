@@ -1,0 +1,17 @@
+.section__header {
+    background-image: url('../images/pages-bg/home-bg.png');
+    display: flex;
+    align-items: flex-end;
+    padding: 3em;
+    height: 77em;
+}
+
+.title {
+    color: $white;
+    font-size: $font-size-h1;
+    font-family: $font-family-PTSerif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 0 2px 4px $black_80;
+}

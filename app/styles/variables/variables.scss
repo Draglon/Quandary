@@ -4,6 +4,7 @@ $white: #fff;
 
 // Black
 $black: #000;
+$black_80: rgba($black, .8);
 
 // Grey
 $grey: #c8c8c8;
@@ -12,24 +13,30 @@ $grey: #c8c8c8;
 $blue: #637ab4;
 $blue-lightest: #e9efff;
 
+// Green
+$green: #83cec6;
+
 // ==================== TEXT COLORS ====================
 $text-color-base: #1c1c1c;
+$text-color-active: $green;
 
 // Link style
-$link-color: $text-color-base;
-$link-color-hover: $blue;
-$link-color-active: $blue;
+$link-color: $white;
+$link-color-hover: $green;
+$link-color-active: $green;
 
 // ==================== BACKGROUND ======================
 $bg-base: $white;
 $bg-header: $white;
 $bg-footer: $grey;
+$bg-active: $green;
 
 // ==================== FONT FAMILY ===================
 $font-serif: serif;
 $font-sans-serif: sans-serif;
 $font-family-base: 'Montserrat', sans-serif;
 $font-family-Playfair: 'Playfair Display', serif;
+$font-family-PTSerif: 'PT Serif', serif;
 
 // ==================== FONT SIZE =======================
 // base
@@ -40,10 +47,12 @@ $font-size16: 1.6em;
 $font-size20: 2em;
 $font-size24: 2.4em;
 $font-size30: 3em;
+$font-size36: 3.6em;
 $font-size70: 7em;
+$font-size84: 8.4em;
 
 // tags
-$font-size-h1: $font-size70; // h1
+$font-size-h1: $font-size84; // h1
 $font-size-h2: $font-size30; // h2
 $font-size-h3: $font-size16; // h3
 $font-size-p: $font-size16; // p

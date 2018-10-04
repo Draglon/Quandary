@@ -1,22 +1,31 @@
 .navbar {
-    margin-top: 6em;
     padding-left: 3em;
+    margin-top: 6em;
     margin-bottom: 10.5em;
 
-    &__menu {
-
-    }
-
     &__item {
+        margin-bottom: 1.8em;
+        &:last-child {margin: 0;}
 
         &.active a {
-            color: #83CEC6;
+            color: $text-color-active;
+
+            &:before {
+                content: '';
+                background-color: $bg-active;
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                height: 6px;
+                width: 220px;
+            }
         }
     }
 
     &__link {
         color: $white;
-        font-size: 3.6em;
+        font-size: $font-size36;
         font-weight: bold;
+        position: relative;
     }
 }
