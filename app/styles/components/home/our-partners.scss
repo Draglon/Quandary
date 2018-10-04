@@ -1,0 +1,14 @@
+.our-partners {
+    margin: 3em 0;
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 3em;
+        margin-bottom: 3em;
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+}

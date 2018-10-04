@@ -1,0 +1,33 @@
+.out-team {
+    margin: 3em 0;
+    text-align: center;
+
+    &__list {
+        display: inline-block;
+        margin: 3.6em auto 0;
+    }
+
+    &__item {
+        float: left;
+        padding: 0 5.5em;
+        margin-bottom: 4em;
+        width: 39em;
+    }
+
+    &__figure {
+        margin-bottom: 1.2em;
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+
+    &__name {
+        font-size: $font-size30;
+        font-family: $font-family-PTSerif;
+    }
+
+    &__position {
+        font-size: $font-size18;
+    }
+}

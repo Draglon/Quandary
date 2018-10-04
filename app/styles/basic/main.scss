@@ -43,6 +43,15 @@ ul {list-style-type: none;
 .hidden {display: none !important;}
 .text-bold {font-weight: bold;}
 
+.clearfix {
+  &:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+  }
+}
+
 // Main
 .main {
   display: flex;
@@ -55,6 +64,28 @@ ul {list-style-type: none;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
+
+  &__title {
+    color: $black;
+    font-family: $font-family-PTSerif;
+    font-size: $font-size36;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 18px;
+    padding-top: 30px;
+    position: relative;
+    text-align: left;
+
+    &:before {
+      content: '';
+      background-color: $bg-active;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 6px;
+      width: 300px;
+    }
+  }
 }
 // -------------------------- screen: 1024px ---------------------
 // @media screen and (max-width: 1024px) {
