@@ -43,16 +43,19 @@
 - var image = require('../../../images/article/diagram_2.png')
 
 h4 !{pageTitle}
-h2 #{title_1}
+h2
+    span #{title_1}
 p #{text_1}
 div #{listLabel_1}
 ul
     each item in list_1
         li #{item}
 
-h2 #{title_2}
+h2
+    span #{title_2}
 
-h2 #{title_3}
+h2
+    span #{title_3}
 ul
     each item_3 in list_3
         li #{item_3.text}

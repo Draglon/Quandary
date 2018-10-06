@@ -8,6 +8,7 @@
 
 .blog {
     display: flex;
+    padding-bottom: 3em;
 
     &__article {
         flex: 0 0 calc(100% - 37em);

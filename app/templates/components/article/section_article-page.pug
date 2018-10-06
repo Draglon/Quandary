@@ -36,13 +36,14 @@ p #{text_1}
 figure
     img(src=image_1)
 
-h2 #{title}
+h2
+    span #{title}
 p #{text_2}
 
 h3 #{listTitle_2}
-div #{listLabel_2}
+p #{listLabel_2}
 ul
     each item_2 in list_2
-        li #{item_2}
+        li(style='margin-bottom:30px;') #{item_2}
 figure
     img(src=image_2)
