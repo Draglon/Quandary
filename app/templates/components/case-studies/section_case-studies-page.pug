@@ -1,0 +1,65 @@
+- var pageTitle = "Process improvement projects have offered our clients results that speak for themselves:<br/>" +
+- "- Average productivity increase of 300%<br/>" +
+- "- Reduced or eliminated downtime<br/>" +
+- "- Significant cost savings<br/>" +
+- "- Increased employee engagement caused by more meaningful jobs<br/>" +
+- "Ready to boost your business? Then read on!"
+
+- var title_1 = "Who needs process improvement and why?"
+- var text_1 = "Process improvement is the practice of making your business more efficient. For a startup getting ready to scale, process improvement can help to avoid numerous mistakes. For an established organization, process improvement brings significant savings of costs and time."
+- var listLabel_1 = "If your organization encounters at least one of these markers, it’s time to take a close look at your processes:"
+- var list_1 = [
+-   "Tension between departments caused by misunderstandings",
+-   "Dependence on specific people",
+-   "Lengthy integration of new hires",
+-   "Negative ratio of value-adding to supporting activities",
+-   "Issues with reporting in finance, project management, production or HR spheres",
+-   "Important downtime occurrences",
+-   "Software responsible for bottlenecks in customer service",
+-   "Increasing need of personal control by department heads"
+-]
+
+- var title_2 = "Similar Cases"
+- var cases = []
+
+- var title_3 = "Our process improvement approach"
+- var list_3 = [
+-   {
+-    text: "Start when you need it. We are happy to embark on your project at any stage:",
+-    subList: [
+-       "Planning and execution",
+-       "Doing the IT part while you manage the project on your own",
+-       "Consulting while your staff is doing the job",
+-       "Take-over to finish the work of a different provider"
+-    ]
+-   },
+-   {text: "Listen. We ask many questions and get to business very quickly. We will use advanced analytics to understand the root cause of your business issues."},
+-   {text: "Map. We will deconstruct your current way of running business. This helps to discover the inefficient steps and find gaps vs ideal process."},
+-   {text: "Use technology. We use advanced tech instruments to come up with solutions and implement them. This allows reducing the project duration timing and laying the base for process automation opportunities going forward."},
+-   {text: "Ensure results. As your business consultant, we care about your bottom line results. We ensure that process improvement projects bring tangible business gains."},
+-   {text: "Maintain. We provide long-term support, making sure the developed solution is accepted by the organization and is working in line with changing business environment."}
+-]
+
+- var image = require('../../../images/article/diagram_2.png')
+
+h4 !{pageTitle}
+h2 #{title_1}
+p #{text_1}
+div #{listLabel_1}
+ul
+    each item in list_1
+        li #{item}
+
+h2 #{title_2}
+
+h2 #{title_3}
+ul
+    each item_3 in list_3
+        li #{item_3.text}
+            if(item_3.subList)
+                ul
+                    each subItem in item_3.subList
+                        li #{subItem}
+
+figure
+    img(src=image)

@@ -185,4 +185,8 @@ input[type="checkbox"]:checked + label {
 }
 .btn-primary {
   @include btn-primary();
+  &--small {
+    font-size: $font-size18;
+    height: $btn-height-small;
+  }
 }

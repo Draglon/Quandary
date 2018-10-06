@@ -1,0 +1,48 @@
+- var pageTitle = "Process improvement will change your business life for the better. No, you’re not reading a mantra-life-coach-change-your-destiny article. This will be pure business. You should run efficient processes. It doesn't matter if your organization is big or small, whether you use nails and hammers or exquisite consulting techniques."
+- var listLabel = "You may have already faced some of the visible consequences of lagging processes:"
+- var list = [
+-   "Frequent downtime",
+-   "Inter-departmental conflicts",
+-   "Long on-boarding for newcomers",
+-   "High dependence on personnel remaining in the same role",
+-   "Hard times understanding the status of ongoing projects",
+-   "All kinds of unpleasant surprises happening within the organization",
+-   "The necessity of detailed control over routine operations by the Management"
+-]
+- var text_1 = "Whenever a business owner faces these types of issues, they usually understand that it’s high time to focus on process improvement. Unfortunately, in some cases, (okay, in too many cases), they may be too busy to initiate the change. You remember the famous picture, right?"
+- var image_1 = require('../../../images/article/people.png')
+
+- var title = "Process Improvement Tools"
+- var text_2 = "I’m sure you wouldn’t be surprised that there’s no such thing as the best tool for process improvement. It all depends on the type of organization, available data, type of the issue and many other factors. Let’s take a look at the most well-known tools used by process improvement specialists."
+
+- var listTitle_2 = "DMAIC & DMADV"
+- var listLabel_2 = "The acronyms stand for Define – Measure – Analyze – Improve / Design – Control / Verify. This process improvement tool is one of the simplest to start with. It may be especially useful for project-oriented organizations. The tool can help in finding ways to improve existing product or service or develop the new one. The team goes through five clear steps:"
+- var list_2 = [
+-   "Define the problem or opportunity. The outcome of this step is the definitive list of goals the project is aiming to achieve.",
+-   "Measure the existing process. As a result, the team comes up with a list of agreed CTQ (critical-to-success) factors. Obvious from the name of the step, these factors should be easily measurable.",
+-   "Analyze the available information on current performance. How and why the current state is different from the desired state? This step is about understanding the gap you need to overcome and the root cause of this gap.",
+-   "Improve / Design stage is the step when the team stops strategizing and starts acting. The idea is to assess the possible ways to overcome the gap defined in the previous step. Cost-benefit analysis should help to find the options that work best. Then the team should run an experiment or a pilot project to test the approach. Measuring the CTQs of the pilot is uber-important.",
+-   "Control / Verify is the step most frequently overlooked. This is about making sure that the new process is cascaded throughout the relevant part of the organization. It implies a lot of communication to assure that the staff not involved in the development is embracing the process improvement. In case of development of the new process or product this stage is used to verify with the client that the outcome meets their needs."
+-]
+- var image_2 = require('../../../images/article/diagram_1.png')
+
+h4 #{pageTitle}
+div #{listLabel}
+ul
+    each item in list
+        li #{item}
+
+p #{text_1}
+figure
+    img(src=image_1)
+
+h2 #{title}
+p #{text_2}
+
+h3 #{listTitle_2}
+div #{listLabel_2}
+ul
+    each item_2 in list_2
+        li #{item_2}
+figure
+    img(src=image_2)

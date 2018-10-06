@@ -1,0 +1,27 @@
+- var autorPhoto = require('../../../images/team/person_1.png')
+- var autor = 'John Malkovich'
+- var text = 'John is the Director of Marketing for Empire Flippers, an INC 5,000 company, that helps people buy and sell online businesses from content sites and ecommerce, to Amazon FBA and SAAS businesses.'
+- var button = 'Get in touch'
+
+- var title = 'Post categories'
+- var navBlog = [
+-   {href: '#', text: 'Custom business applications'},
+-   {href: '#', text: 'E-Commerce'},
+-   {href: '#', text: 'SaaS integrations'},
+-   {href: '#', text: 'Process improvement'},
+-   {href: '#', text: 'Sales process'}
+-]
+
+.autor
+    figure.autor__figure
+        img.autor__photo(src=autorPhoto)
+    h2.autor__name #{autor}
+    p.autor__description #{text}
+    button.btn.btn-primary.btn-primary--small #{button}
+
+nav.navblog
+    h3.navblog__title #{title}
+    ul.navblog__menu
+        each item in navBlog
+            li.navblog__item
+                a.navblog__link(href=item.href) #{item.text}

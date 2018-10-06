@@ -46,6 +46,11 @@ const common = merge([
                 chunks: ['index', 'common'],
                 template: PATHS.source + '/templates/pages/contact.pug'
             }),
+            new HtmlWebpackPlugin({
+                filename: 'post.html',
+                chunks: ['index', 'common'],
+                template: PATHS.source + '/templates/pages/post.pug'
+            }),
             
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'common'

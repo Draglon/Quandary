@@ -1,18 +1,18 @@
 extends ../base
 block title
-    | Case Studies
+    | Post
 
 block aside
     include ../components/aside/aside
 
 block content
     .page
-        include ../components/case-studies/section_case-studies-header
+        include ../components/article/section_article-header
         .page__content
             .blog
                 article.blog__article
-                    include ../components/case-studies/section_case-studies-page
+                    include ../components/article/section_article-page
                 aside.blog__aside
-                    include ../components/case-studies/section_case-studies-aside
+                    include ../components/article/section_article-aside
         
             include ../components/home/section_question-form

@@ -64,11 +64,11 @@ $font-size-h1: $font-size84; // h1
 $font-size-h2: $font-size36; // h2
 $font-size-h3: $font-size24; // h3
 $font-size-p: $font-size16; // p
-$font-size-btn: $font-size18; // button
+$font-size-btn: $font-size30; // button
 $font-size-input: $font-size18; // select, input, textarea
 $font-size-radio: $font-size18; // radio, checkbox
 
-$font-weight-base: 300;
+$font-weight-base: normal;
 $line-height-base: 1.4;
 $letter-spacing-base: 0;
 
@@ -96,8 +96,10 @@ $btn-font-size-mobile: $font-size-btn;
 $btn-font-family: $font-family-PTSerif;
 $btn-font-style: italic;
 $btn-weight: bold;
-$btn-padding: .5em 2em;
+$btn-padding: 0 2em;
 $btn-radius: 0;
+$btn-height: 54px;
+$btn-height-small: 36px;
 // Primary Button
 $primary-btn-color: $black;
 $primary-btn-color-hover: $black;

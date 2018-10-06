@@ -26,6 +26,7 @@
   border: $border;
   box-shadow: $box-shadow;
   color: $color;
+  height: $btn-height;
   @include main-transition(background-color, border-color);
 
   &:hover {
