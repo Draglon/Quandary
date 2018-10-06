@@ -1,0 +1,63 @@
+.category {
+    padding-top: 3em;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+
+    &__item {
+        margin-bottom: 3em;
+    }
+
+    &__link {
+        background-color: $bg-active;
+        display: block;
+        padding: .2em;
+        position: relative;
+        height: 32em;
+        width: 32em;
+
+        &:hover, &:hover > span {
+            background-color: $purple;
+        }
+
+        & > span {
+            background-color: $bg-active;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+
+    &__description {
+        padding: 2.2em .2em .4em 3em;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__label {
+        color: $white;
+        display: block;
+        font-size: $font-size12;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 2px;
+    }
+
+    &__text {
+        color: $white;
+        display: block;
+        font-size: $font-size18;
+        font-weight: bold;
+    }
+
+    &__btns {
+        text-align: center;
+    }
+}

@@ -1,0 +1,59 @@
+.blog-header {
+    background-image: url('../images/pages-bg/blog-bg.png');
+    align-items: flex-start;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.blog {
+    display: flex;
+
+    &__article {
+        flex: 0 0 calc(100% - 37em);
+    }
+
+    &__aside {
+        flex: 0 0 37em;
+        padding-left: 3.6em;
+    }
+}
+
+.navblog {
+    padding-top: 3em;
+
+    &__title {
+        font-family: $font-family-PTSerif;
+        font-size: $font-size24;
+        font-weight: bold;
+        position: relative;
+
+        &:before {
+            content: '';
+            background-color: $bg-active;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 6px;
+            width: 250px;
+        }
+
+    }
+
+    &__menu {
+        margin-top: 2em;
+    }
+
+    &__item {
+        margin-bottom: 1em;
+    }
+
+    &__link {
+        color: $black;
+        font-size: $font-size18;
+
+        &:hover {
+            color: $purple;
+        }
+    }
+}

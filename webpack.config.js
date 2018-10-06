@@ -29,11 +29,6 @@ const common = merge([
             new HtmlWebpackPlugin({
                 filename: 'index.html',
                 chunks: ['index', 'common'],
-                template: PATHS.source + '/templates/pages/main.pug'
-            }),
-            new HtmlWebpackPlugin({
-                filename: 'services.html',
-                chunks: ['index', 'common'],
                 template: PATHS.source + '/templates/pages/services.pug'
             }),
             new HtmlWebpackPlugin({

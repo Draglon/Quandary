@@ -1,0 +1,23 @@
+- var catalog = [
+-   {href: '#', image: require('../../../images/catalog/post_1.png'), label: "Category", text: "Blog post name based on keywords that can be too long to fit in a single line"},
+-   {href: '#', image: require('../../../images/catalog/post_2.png'), label: "Category", text: "Blog post name based on keywords that can be too long to fit in a single line"},
+-   {href: '#', image: require('../../../images/catalog/post_3.png'), label: "Category", text: "Blog post name based on keywords that can be too long to fit in a single line"},
+-   {href: '#', image: require('../../../images/catalog/post_1.png'), label: "Category", text: "Blog post name based on keywords that can be too long to fit in a single line"},
+-   {href: '#', image: require('../../../images/catalog/post_2.png'), label: "Category", text: "Blog post name based on keywords that can be too long to fit in a single line"},
+-   {href: '#', image: require('../../../images/catalog/post_3.png'), label: "Category", text: "Blog post name based on keywords that can be too long to fit in a single line"}
+-]
+- var button = "Show more"
+
+section.section.category
+    ul.category__list
+        each item in catalog
+            li.category__item
+                a.category__link(href=item.href) 
+                    figure.category__figure
+                        img.category__img(src=item.image)
+                    span.category__description
+                        span.category__label #{item.label}
+                        span.category__text #{item.text}
+
+    .category__btns
+        button.btn.btn-primary #{button}

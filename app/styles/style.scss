@@ -12,6 +12,7 @@
 // Forms
 @import 'forms/forms';
 // Components
+@import 'components/header';
 @import 'components/page';
 @import 'components/question-form';
 // aside - panel
@@ -20,9 +21,18 @@
 @import 'components/aside/navbar';
 @import 'components/aside/footer';
 // home - page
-@import 'components/home/header';
+@import 'components/home/home';
 @import 'components/home/our-expertise';
 @import 'components/home/our-partners';
 @import 'components/home/our-team';
 @import 'components/home/resent-cases';
 @import 'components/home/testimonials';
+// blog - page
+@import 'components/blog/blog';
+@import 'components/blog/blog-category';
+// article - page
+@import 'components/article/article';
+// case-studies - page
+@import 'components/case-studies/case-studies';
+// contact - page
+@import 'components/contact/contact';

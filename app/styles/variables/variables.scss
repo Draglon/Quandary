@@ -18,6 +18,9 @@ $blue-lightest: #e9efff;
 // Green
 $green: #83cec6;
 
+// Purple
+$purple: #8a42ff;
+
 // ==================== TEXT COLORS ====================
 $text-color-base: $black;
 $text-color-active: $green;
@@ -44,6 +47,7 @@ $font-family-PTSerif: 'PT Serif', serif;
 // base
 $font-size-base: 10px;
 // font size
+$font-size12: 1.2em;
 $font-size14: 1.4em;
 $font-size16: 1.6em;
 $font-size18: 1.8em;
@@ -57,8 +61,8 @@ $font-size84: 8.4em;
 
 // tags
 $font-size-h1: $font-size84; // h1
-$font-size-h2: $font-size30; // h2
-$font-size-h3: $font-size16; // h3
+$font-size-h2: $font-size36; // h2
+$font-size-h3: $font-size24; // h3
 $font-size-p: $font-size16; // p
 $font-size-btn: $font-size18; // button
 $font-size-input: $font-size18; // select, input, textarea

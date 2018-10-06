@@ -2,11 +2,14 @@ extends ../base
 block title
     | Contact
 
-//- block header
-//-     include ../components/header/header
-
 block aside
     include ../components/aside/aside
 
 block content
-    
+    .page
+        include ../components/contact/section_contact-header
+        .page__content
+            include ../components/contact/section_contact-description
+            include ../components/contact/section_contact-form 
+            include ../components/contact/section_contact-map
+            

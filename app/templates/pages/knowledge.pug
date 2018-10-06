@@ -2,10 +2,14 @@ extends ../base
 block title
     | Knowledge
 
-//- block header
-//-     include ../components/header/header
-
 block aside
     include ../components/aside/aside
 
 block content
+    .page
+        include ../components/blog/section_blog-header
+        .page__content.blog
+            article.blog__article
+                include ../components/blog/section_blog-category
+            aside.blog__aside
+                include ../components/blog/section_blog-aside
