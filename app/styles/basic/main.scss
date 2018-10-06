@@ -10,19 +10,10 @@ body {
 }
 figure {display: block;}
 img {border: none;display: block;}
-h1, h2, h3, h4, h5, h6 {font-weight: $font-weight-base;}
-h1 {
-  font-size: $font-size-h1;
-  text-align: center;
-}
-h2 {
-  font-size: $font-size-h2;
-  text-align: center;
-}
+h1 {font-size: $font-size-h1;}
+h2 {font-size: $font-size-h2;}
 h3 {font-size: $font-size-h3;}
-p {
-  font-size: $font-size-p;
-}
+p {font-size: $font-size-p;}
 a {
   color: $link-color;
   text-decoration: none;

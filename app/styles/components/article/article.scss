@@ -2,10 +2,37 @@
     background-image: url('../images/pages-bg/blog-post-bg.png');
 }
 
+.autor {
+    margin-bottom: 3em;
+
+    &__figure {
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 1em;
+        width: 12em;
+        height: 12em;
+
+        img {
+            margin-top: -1em;
+            margin-left: -3em;
+            width: 16.4em;
+        }
+    }
+
+    &__name {
+        font-family: $font-family-PTSerif;
+        margin-bottom: 18px;
+    }
+
+    &__description {
+        font-size: $font-size12;
+        margin-bottom: 3em;
+    }
+}
+
 .post {
     h2 {
         color: $black;
-        display: inline-block;
         font-size: $font-size36;
         font-weight: bold;
         line-height: normal;
@@ -13,17 +40,19 @@
         position: relative;
         text-align: left;
     
-        &:before {
-          content: '';
-          background-color: $bg-active;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: -10px;
-          height: 6px;
-          z-index: 0;
-        }
+        // &:before {
+        //   content: '';
+        //   background-color: $bg-active;
+        //   position: absolute;
+        //   bottom: 0;
+        //   left: 0;
+        //   right: -10px;
+        //   height: 6px;
+        //   z-index: 0;
+        // }
         span {
+            border-bottom: 6px solid $bg-active;
+            padding-right: 10px;
             position: relative;
             z-index: 1;
         }
@@ -83,3 +112,4 @@
         }
     }
 }
+

@@ -27,23 +27,12 @@ img {
   display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-}
-
 h1 {
   font-size: 8.4em;
-  text-align: center;
 }
 
 h2 {
   font-size: 3.6em;
-  text-align: center;
 }
 
 h3 {
@@ -719,8 +708,6 @@ input[type="checkbox"]:checked + label:after {
 
 .navblog__title {
   font-family: "PT Serif", serif;
-  font-size: 2.4em;
-  font-weight: bold;
   position: relative;
 }
 
@@ -820,9 +807,36 @@ input[type="checkbox"]:checked + label:after {
   background-image: url(.././images/blog-post-bg.png);
 }
 
+.autor {
+  margin-bottom: 3em;
+}
+
+.autor__figure {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1em;
+  width: 12em;
+  height: 12em;
+}
+
+.autor__figure img {
+  margin-top: -1em;
+  margin-left: -3em;
+  width: 16.4em;
+}
+
+.autor__name {
+  font-family: "PT Serif", serif;
+  margin-bottom: 18px;
+}
+
+.autor__description {
+  font-size: 1.2em;
+  margin-bottom: 3em;
+}
+
 .post h2 {
   color: #000;
-  display: inline-block;
   font-size: 3.6em;
   font-weight: bold;
   line-height: normal;
@@ -831,18 +845,9 @@ input[type="checkbox"]:checked + label:after {
   text-align: left;
 }
 
-.post h2:before {
-  content: '';
-  background-color: #83cec6;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: -10px;
-  height: 6px;
-  z-index: 0;
-}
-
 .post h2 span {
+  border-bottom: 6px solid #83cec6;
+  padding-right: 10px;
   position: relative;
   z-index: 1;
 }
