@@ -1,3 +1,56 @@
 .contact-header {
     background-image: url('../images/pages-bg/contacts-bg.png');
 }
+
+.contact-description {
+
+    &__title {
+        font-size: $font-size30;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 37px;
+        max-width: 640px;
+        margin: 0 auto 60px;
+        text-align: center;
+    }
+
+    &__text {
+        font-family: $font-family-PTSerif;
+        font-size: $font-size18;
+        line-height: 29px;
+        max-width: 800px;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+}
+
+.contact-form {
+    margin: 0 auto 6em;
+    max-width: 966px;
+
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=tel],
+    textarea,
+    select {
+        border-color: $bg-active;
+        color: $black;
+    }
+    ::-webkit-input-placeholder {color: $black;}
+    :-moz-placeholder {color: $black;}
+    ::-moz-placeholder {color: $black;}
+    :-ms-input-placeholder {color: $black;}
+}
+
+.contact-map {
+    text-align: center;
+
+    h3 {
+        margin-bottom: 18px;
+    }
+    img {
+        display: inline-block;
+        max-width: 966px;
+    }
+}
