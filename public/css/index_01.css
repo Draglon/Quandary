@@ -1031,6 +1031,15 @@ textarea:-ms-input-placeholder {
   .our-expertise__item {
     width: 50%;
   }
+
+  .contact-form button {
+    font-size: 2.4em;
+    padding: 0 1em;
+  }
+
+  .contact-map img {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
