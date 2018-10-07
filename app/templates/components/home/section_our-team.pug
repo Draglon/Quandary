@@ -1,11 +1,16 @@
 - var title = 'Our team'
 - var team = [
 -   {src: require('../../../images/team/person_1.png'), name: 'John Malkovich', position: 'CEO'},
+-   {src: require('../../../images/team/person_2.png'), name: 'Hugh Jackman', position: 'COO'},
+-   {src: require('../../../images/team/person_1.png'), name: 'John Malkovich', position: 'CEO'},
+-   {src: require('../../../images/team/person_2.png'), name: 'Hugh Jackman', position: 'COO'},
+-   {src: require('../../../images/team/person_1.png'), name: 'John Malkovich', position: 'CEO'},
 -   {src: require('../../../images/team/person_2.png'), name: 'Hugh Jackman', position: 'COO'}
 -]
 
 section.section.out-team
-    h2.section__title #{title}
+    h2.section__title
+        span #{title}
     ul.out-team__list.clearfix
         each item in team
             li.out-team__item

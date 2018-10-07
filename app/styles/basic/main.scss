@@ -71,22 +71,30 @@ ul {list-style-type: none;
       content: '';
       background-color: $bg-active;
       position: absolute;
-      bottom: 0;
+      bottom: 3px;
       left: 0;
       height: 6px;
       width: 300px;
     }
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
   }
 }
-// -------------------------- screen: 1024px ---------------------
-// @media screen and (max-width: 1024px) {
-//   h1 {font-size: $font-size30;}
-// }
+
 // -------------------------- screen: 767px ---------------------
-// @media screen and (max-width: 767px) {
-//   .main {padding-top: $header-height-mobile;}
-// }
-// -------------------------- screen: 480px ---------------------
-// @media screen and (max-width: 480px) {
-//   h1 {font-size: $font-size24;}
-// }
+@media screen and (max-width: 767px) {
+  .main {
+    display: block;
+  }
+  .section {
+    &__title {
+      font-size: $font-size30;
+      &:before {
+        width: 200px;
+      }
+    }
+  }
+}

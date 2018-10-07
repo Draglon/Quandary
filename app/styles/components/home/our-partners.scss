@@ -12,3 +12,23 @@
         max-width: 100%;
     }
 }
+
+// -------------------------- screen: 767px ---------------------
+@media screen and (max-width: 767px) {
+    .our-partners {
+        &__item {
+            padding-right: 1.5em;
+            margin-bottom: 1.5em;
+            width: 32%;
+        }
+    }
+}
+
+// -------------------------- screen: 480px ---------------------
+@media screen and (max-width: 480px) {
+    .our-partners {
+        &__item {
+            width: 48%;
+        }
+    }
+}

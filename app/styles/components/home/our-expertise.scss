@@ -26,3 +26,34 @@
         }
     }
 }
+
+// -------------------------- screen: 1024px ---------------------
+@media screen and (max-width: 1024px) {
+    .our-expertise {
+        &__item {
+            width: 50%;
+        }
+    }
+}
+
+// -------------------------- screen: 767px ---------------------
+@media screen and (max-width: 767px) {
+    .our-expertise {
+        &__item {
+            i {
+                font-size: 75px;
+            }
+        }
+    }
+}
+
+// -------------------------- screen: 480px ---------------------
+@media screen and (max-width: 480px) {
+    .our-expertise {
+        &__item {
+            float: none;
+            padding: 0 0 30px;
+            width: 100%;
+        }
+    }
+}

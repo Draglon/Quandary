@@ -8,13 +8,8 @@ $black_80: rgba($black, .8);
 $black_25: rgba($black, .25);
 
 // Grey
-$grey: #c8c8c8;
-$grey-lighter: #e5e5e5;
-$grey-hover: rgba(229, 229, 229, 0.95);
-
-// Blue
-$blue: #637ab4;
-$blue-lightest: #e9efff;
+$grey: #e5e5e5;
+$grey-hover: rgba($grey, .95);
 
 // Green
 $green: #83cec6;
@@ -33,8 +28,8 @@ $link-color-active: $green;
 
 // ==================== BACKGROUND ======================
 $bg-base: $white;
-$bg-header: $white;
-$bg-footer: $grey;
+$bg-aside: #001D21;
+$bg-page: $grey;
 $bg-active: $green;
 
 // ==================== FONT FAMILY ===================
@@ -64,7 +59,7 @@ $font-size84: 8.4em;
 $font-size-h1: $font-size84; // h1
 $font-size-h2: $font-size36; // h2
 $font-size-h3: $font-size24; // h3
-$font-size-p: $font-size16; // p
+$font-size-p: $font-size18; // p
 $font-size-btn: $font-size30; // button
 $font-size-input: $font-size18; // select, input, textarea
 $font-size-radio: $font-size18; // radio, checkbox
@@ -121,7 +116,3 @@ $input-padding: 0 12px;
 $input-shadow: none;
 $input-height: 60px;
 $placeholder-color: $white;
-// ==================== HEADER =======================
-$header-bg: $bg-header;
-$header-height: 8em;
-$header-height-mobile: 8em;
