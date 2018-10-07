@@ -20,7 +20,11 @@
 -]
 
 - var title_2 = "Similar Cases"
-- var cases = []
+- var cases = [
+-    {href: '#', icon: 'icon-money', title: 'Monthly savings', text: 'for mid-sized distribution company', value: '500+ hours $50K'},
+-    {href: '#', icon: 'icon-sales', title: 'Extra sales', text: 'for a regional health industry company', value: '$170K'}
+-]
+- var more = 'LEARN MORE'
 
 - var title_3 = "Our process improvement approach"
 - var list_3 = [
@@ -53,6 +57,15 @@ ul
 
 h2
     span #{title_2}
+section.section.recent-cases
+    ul.recent-cases__list
+        each caseItem in cases
+            li.recent-cases__item
+                a.recent-cases__link(href=caseItem.href data-more=more)
+                    i(class=caseItem.icon)
+                    span #{caseItem.title}
+                    span #{caseItem.text}
+                    span #{caseItem.value}
 
 h2
     span #{title_3}
