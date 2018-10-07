@@ -6,4 +6,17 @@
     &__content {
         padding: 3em 5.5em 29em 4em; 
     }
+
+    &__title {
+        font-size: $font-size30;
+        font-style: italic;
+        margin-bottom: 30px;
+        padding: 0 30px;
+        text-align: center;
+
+        &:first-child {
+            margin: 0 auto;
+            max-width: 700px;
+        }
+    }
 }
