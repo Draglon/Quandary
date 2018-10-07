@@ -3,11 +3,16 @@ module.exports = function () {
     module: {
       rules: [
         {
-          test: /\.(gif|jpg|png|svg)$/,
-          loader: 'file-loader',
-          options: {
-            name: './images/[name].[ext]'
-          }
+          test: /\.(gif|jpg|webp|png|svg)$/,
+          exclude: /fonts/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: './images/[name].[ext]'
+              }
+            }
+          ]
         }
       ]
     }
