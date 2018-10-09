@@ -299,6 +299,7 @@ textarea:-ms-input-placeholder {
   font-style: italic;
   padding: 0 2em;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .btn-primary {
@@ -712,16 +713,18 @@ textarea:-ms-input-placeholder {
 }
 
 .blog {
-  display: flex;
   padding-bottom: 3em;
+  overflow: hidden;
 }
 
 .blog__article {
-  flex: 0 0 calc(100% - 37em);
+  float: left;
+  width: 70%;
 }
 
 .blog__aside {
-  flex: 0 0 37em;
+  float: left;
+  width: 30%;
   padding-left: 3.6em;
 }
 
@@ -730,8 +733,11 @@ textarea:-ms-input-placeholder {
 }
 
 .navblog__title {
+  display: inline-block;
   font-family: "PT Serif", serif;
+  padding-right: 20px;
   position: relative;
+  z-index: 0;
 }
 
 .navblog__title:before {
@@ -741,7 +747,12 @@ textarea:-ms-input-placeholder {
   left: 0;
   bottom: 0;
   height: 6px;
-  width: 250px;
+  width: 100%;
+}
+
+.navblog__title span {
+  position: relative;
+  z-index: 1;
 }
 
 .navblog__menu {
@@ -759,6 +770,7 @@ textarea:-ms-input-placeholder {
 
 .navblog__link:hover {
   color: #8a42ff;
+  text-decoration: underline;
 }
 
 .category {
@@ -1025,11 +1037,43 @@ textarea:-ms-input-placeholder {
     padding: 0 2.5em;
     width: 50%;
   }
+
+  .blog__article {
+    width: 65%;
+  }
+
+  .blog__aside {
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .our-expertise__item {
     width: 50%;
+  }
+
+  .blog__article,
+  .blog__aside {
+    float: none;
+    width: 100%;
+  }
+
+  .blog__aside {
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .autor__figure {
+    float: left;
+    margin-right: 30px;
+  }
+
+  .autor__name {
+    padding-top: 6px;
+  }
+
+  .autor button {
+    clear: both;
   }
 
   .contact-form button {
@@ -1058,6 +1102,10 @@ textarea:-ms-input-placeholder {
   .title {
     font-size: 5.4em;
     line-height: 60px;
+  }
+
+  .sub-title {
+    font-size: 1.8em;
   }
 
   .page {
@@ -1178,5 +1226,30 @@ textarea:-ms-input-placeholder {
   .recent-cases__link span:last-child {
     font-size: 2.4em;
     line-height: 30px;
+  }
+
+  .category {
+    padding-top: 0;
+  }
+
+  .category__link {
+    width: 100%;
+  }
+
+  .category__description {
+    padding: 1.5em;
+  }
+
+  .category button {
+    font-size: 2.4em;
+    padding: 0 1em;
+  }
+
+  .autor__figure {
+    float: none;
+  }
+
+  .autor__name {
+    padding-top: 0;
   }
 }
