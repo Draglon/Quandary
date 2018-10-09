@@ -7,6 +7,8 @@
 -    {href: '#', text: 'Privacy Policy'}
 -]
 
+- var digitalMarketing = "Digital marketing by Extrabrains agency"
+
 .footer
     .footer__item
         .copy !{copy}
@@ -22,3 +24,6 @@
             each item in list
                 .privacy__item
                     a.privacy__link(href=item.href) !{item.text}
+    
+    .footer__item
+        .digital-marketing #{digitalMarketing}

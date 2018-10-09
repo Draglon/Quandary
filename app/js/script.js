@@ -3,87 +3,6 @@ var win_scroll = 0;
 var win_width = 0;
 var win_height = 0;
 
-// ============================================ Global Tags ===============================
-var header = $("#header");
-var headerHeight = header.height();
-var footer = $("#footer");
-
-// =========================================== Main Section ========================================
-var mainSection = function(sectionId) {
-    $(sectionId).css("height", win_height - headerHeight + "px");
-    if (win_scroll >= 0) {
-        $(sectionId).addClass('anim-block');
-    }
-};
-
-var sections = $('main > section');
-var sectionCount = sections.length;
-var sectionPositionTop = [];
-var index = 0;
-
-var sectionOffsetTop = function() {
-    sections.each(function(i) {
-        var offset = $(this).offset();
-        sectionPositionTop[i] = offset.top;
-    });
-
-    for(var i = 0; i < sectionCount; i++) {
-        if (win_scroll >= sectionPositionTop[i]) {
-            sections.eq(i).addClass('anim-block');
-        }
-    }
-};
-
-var sectionIndex = function() {
-    for(var i = 0; i < sectionCount; i++) {
-        if (win_scroll >= sectionPositionTop[i] && win_scroll <= sectionPositionTop[i+1]) {
-            index = i+1;
-        }
-    }
-    return index;
-};
-
-var sectionAnimation = function() {
-    sections.eq(sectionIndex()).addClass('anim-block');
-};
-
-// ============================================ Scroll Header =====================================
-var scrollHeader = function() {
-    if (win_scroll > 50) {
-        header.addClass("header_scroll");
-    } else {
-        header.removeClass("header_scroll");
-    }
-};
-// ============================================ Main Menu =====================================
-var btnMenu = $('#btnMenu');
-var menu = $('#mainMenu');
-
-var mainMenuClose = function() {
-    menu.removeClass('active');
-    btnMenu.removeClass('active');
-};
-var mainMenuOpen = function() {
-    menu.addClass('active');
-    btnMenu.addClass('active');
-};
-
-var mainMenu = function() {
-    btnMenu.on('click', function() {
-        if($(this).hasClass('active')) {
-            mainMenuClose();
-        } else {
-            mainMenuOpen();
-        }
-    });
-
-    $(document).mouseup(function (e){
-        if (!menu.is(e.target) && !btnMenu.is(e.target) && menu.has(e.target).length === 0 ) {
-            mainMenuClose();
-        }
-    });
-};
-
 // =========================================== Form - validation =======================================
 $.validator.addMethod("customemail",
     function(value, element) {
@@ -164,29 +83,9 @@ var form = function(formContact) {
 
 // =========================================== Document Ready ======================================
 $(document).ready(function() {
-    // Sections
-    mainSection();
-    // Main Menu
-    mainMenu();
-    // Form
-    form("#formGetStarted");
-
-    $(".form-step1 .btn").on('click', function() {
-        $(".form-step1").hide();
-        $(".form-step2").show();
-    });
-
-    $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top - headerHeight
-                }, 1000);
-                return false;
-            }
-        }
+    $('#asidePanelBtn').on('click', function() {
+        $(this).toggleClass("active");
+        $('.aside').toggleClass("active");
     });
 });
 
@@ -194,22 +93,11 @@ $(document).ready(function() {
 var callback = function() {
     win_width = window.innerWidth;
     win_height = window.innerHeight;
-
-    scrollHeader();
-    mainSection('#sectionMain');
-    sectionOffsetTop();
-
-    var slide = $('.tiles-slide');
-    slide.css({height: slide.find('.image').height() + 'px'});
 };
 
 // =========================================== Window Scroll ====================
 var callbackScroll = function() {
     win_scroll = $(this).scrollTop();
-
-    scrollHeader();
-    mainSection('#sectionMain');
-    sectionAnimation();
 };
 
 $(document).ready(callback);

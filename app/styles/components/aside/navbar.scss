@@ -3,11 +3,11 @@
     margin-top: 6em;
     margin-bottom: 10.5em;
 
-    &__item {
+    .menu-item {
         margin-bottom: 1.8em;
         &:last-child {margin: 0;}
 
-        &.active a {
+        &.current-menu-item a {
             color: $text-color-active;
 
             &:before {
@@ -17,15 +17,24 @@
                 left: 0;
                 bottom: -3px;
                 height: 6px;
-                width: 220px;
+                width: 110%;
             }
         }
     }
 
-    &__link {
+    a {
         color: $white;
         font-size: $font-size36;
         font-weight: bold;
         position: relative;
+    }
+}
+
+// -------------------------- screen: 767px ---------------------
+@media screen and (max-width: 767px) {
+    .navbar {
+        a {
+            font-size: $font-size30;
+        }
     }
 }

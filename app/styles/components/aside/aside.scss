@@ -4,15 +4,67 @@
     flex: 0 0 300px;
     width: 300px;
     min-height: 100vh;
+
+    &__panel-btn {
+        display: none;
+    }
 }
 
 // -------------------------- screen: 767px ---------------------
 @media screen and (max-width: 767px) {
     .aside {
+        padding-right: 0;
         position: fixed;
         top: 0;
         left: -250px;
         bottom: 0;
         z-index: 100;
+        -webkit-transition: left .5s ease;
+        -moz-transition: left .5s ease;
+        -o-transition: left .5s ease;
+        transition: left .5s ease;
+
+        &.active {
+            left: 0;
+            -webkit-transition: left .5s ease;
+            -moz-transition: left .5s ease;
+            -o-transition: left .5s ease;
+            transition: left .5s ease;
+        }
+
+        &__wrapper {
+            padding-right: 50px;
+            overflow: auto;
+            height: 100%;
+        }
+        
+        &__panel-btn {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+
+            &:before {
+                content: '>';
+                color: $white;
+                font-size: 50px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(0);
+            }
+
+            &.active {
+                &:before {
+                    transform: translate(-50%, -50%) rotate(180deg);
+                }
+            }
+
+            &:active {
+                background-color: rgba($bg-active, .25);
+            }
+        }
     }
 }

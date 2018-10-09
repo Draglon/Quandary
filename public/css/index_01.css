@@ -445,6 +445,10 @@ textarea:-ms-input-placeholder {
   min-height: 100vh;
 }
 
+.aside__panel-btn {
+  display: none;
+}
+
 .logo__img {
   max-width: 100%;
 }
@@ -455,29 +459,29 @@ textarea:-ms-input-placeholder {
   margin-bottom: 10.5em;
 }
 
-.navbar__item {
+.navbar .menu-item {
   margin-bottom: 1.8em;
 }
 
-.navbar__item:last-child {
+.navbar .menu-item:last-child {
   margin: 0;
 }
 
-.navbar__item.active a {
+.navbar .menu-item.current-menu-item a {
   color: #83cec6;
 }
 
-.navbar__item.active a:before {
+.navbar .menu-item.current-menu-item a:before {
   content: '';
   background-color: #83cec6;
   position: absolute;
   left: 0;
   bottom: -3px;
   height: 6px;
-  width: 220px;
+  width: 110%;
 }
 
-.navbar__link {
+.navbar a {
   color: #fff;
   font-size: 3.6em;
   font-weight: bold;
@@ -509,6 +513,10 @@ textarea:-ms-input-placeholder {
 
 .footer__item .privacy__link {
   font-size: 1.2em;
+}
+
+.footer__item .digital-marketing {
+  color: #fff;
 }
 
 .home-header {
@@ -1152,11 +1160,61 @@ textarea:-ms-input-placeholder {
   }
 
   .aside {
+    padding-right: 0;
     position: fixed;
     top: 0;
     left: -250px;
     bottom: 0;
     z-index: 100;
+    -webkit-transition: left .5s ease;
+    -moz-transition: left .5s ease;
+    -o-transition: left .5s ease;
+    transition: left .5s ease;
+  }
+
+  .aside.active {
+    left: 0;
+    -webkit-transition: left .5s ease;
+    -moz-transition: left .5s ease;
+    -o-transition: left .5s ease;
+    transition: left .5s ease;
+  }
+
+  .aside__wrapper {
+    padding-right: 50px;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .aside__panel-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+  }
+
+  .aside__panel-btn:before {
+    content: '>';
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  .aside__panel-btn.active:before {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  .aside__panel-btn:active {
+    background-color: rgba(131, 206, 198, 0.25);
+  }
+
+  .navbar a {
+    font-size: 3em;
   }
 
   .home-header {
