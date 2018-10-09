@@ -14,6 +14,7 @@
     font-style: $f-style;
     padding: $padding;
     display: inline-block;
+    white-space: nowrap;
 }
 
 @mixin btn-primary (

@@ -123,3 +123,33 @@
     }
 }
 
+// -------------------------- screen: 1024px ---------------------
+@media screen and (max-width: 1024px) {
+    .autor {
+        &__figure {
+            float: left;
+            margin-right: 30px; 
+        }
+
+        &__name {
+            padding-top: 6px;
+        }
+
+        button {
+            clear: both;
+        }
+    }
+}
+
+// -------------------------- screen: 480px ---------------------
+@media screen and (max-width: 480px) {
+    .autor {
+        &__figure {
+            float: none;
+        }
+
+        &__name {
+            padding-top: 0;
+        }
+    }
+}
