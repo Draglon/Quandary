@@ -356,7 +356,7 @@ textarea:-ms-input-placeholder {
 }
 
 .section__header--small {
-  height: 36em;
+  min-height: 36em;
 }
 
 .title {
@@ -1249,7 +1249,41 @@ textarea:-ms-input-placeholder {
   }
 }
 
+@media screen and (max-width: 500px) {
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  :-moz-placeholder {
+    font-size: 16px;
+  }
+
+  ::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 480px) {
+  ::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+
+  :-moz-placeholder {
+    font-size: 14px;
+  }
+
+  ::-moz-placeholder {
+    font-size: 14px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 14px;
+  }
+
   .title {
     font-size: 3.6em;
     line-height: 40px;
@@ -1309,5 +1343,41 @@ textarea:-ms-input-placeholder {
 
   .autor__name {
     padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+
+  :-moz-placeholder {
+    font-size: 12px;
+  }
+
+  ::-moz-placeholder {
+    font-size: 12px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  ::-webkit-input-placeholder {
+    font-size: 10px;
+  }
+
+  :-moz-placeholder {
+    font-size: 10px;
+  }
+
+  ::-moz-placeholder {
+    font-size: 10px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 10px;
   }
 }

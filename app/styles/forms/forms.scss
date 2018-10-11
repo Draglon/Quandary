@@ -49,3 +49,32 @@ textarea {
     height: $btn-height-small;
   }
 }
+
+// -------------------------- screen: 500px ---------------------
+@media screen and (max-width: 500px) {
+  ::-webkit-input-placeholder {font-size: 16px;}
+  :-moz-placeholder {font-size: 16px;}
+  ::-moz-placeholder {font-size: 16px;}
+  :-ms-input-placeholder {font-size: 16px;}
+}
+// -------------------------- screen: 480px ---------------------
+@media screen and (max-width: 480px) {
+  ::-webkit-input-placeholder {font-size: 14px;}
+  :-moz-placeholder {font-size: 14px;}
+  ::-moz-placeholder {font-size: 14px;}
+  :-ms-input-placeholder {font-size: 14px;}
+}
+// -------------------------- screen: 420px ---------------------
+@media screen and (max-width: 420px) {
+  ::-webkit-input-placeholder {font-size: 12px;}
+  :-moz-placeholder {font-size: 12px;}
+  ::-moz-placeholder {font-size: 12px;}
+  :-ms-input-placeholder {font-size: 12px;}
+}
+// -------------------------- screen: 380px ---------------------
+@media screen and (max-width: 380px) {
+  ::-webkit-input-placeholder {font-size: 10px;}
+  :-moz-placeholder {font-size: 10px;}
+  ::-moz-placeholder {font-size: 10px;}
+  :-ms-input-placeholder {font-size: 10px;}
+}
